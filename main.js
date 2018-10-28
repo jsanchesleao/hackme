@@ -12,6 +12,6 @@ var _0x7b1a = ["\x2F\x31", "\x31", "\x67\x65\x74", "\x2F\x74\x77\x6F", "\x32", "
 
 app.use(express.static('./public'))
 
-app.listen(8080, function () {
+app.listen(process.env.PORT || 8080, function () {
   console.log('the app is running in :8080')
 })
